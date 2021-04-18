@@ -6,7 +6,7 @@ export const MUG_COLLECTION = {
         artist: "HELEN KIRST",
         description: "Handmade in Brooklyn, NY",
         pic_1: "mug_images/blackMug2.png",
-        pic_2: "mug_images/blackMug2.png"
+        pic_2: "mug_images/blackMug2.jpg"
     },
     mug_2: {
         img: "mug_images/blackMug2.png",
