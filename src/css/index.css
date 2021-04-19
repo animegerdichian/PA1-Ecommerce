@@ -6,7 +6,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color:#f0e1c5;
+    background-color:#f5f5f5;
     
   }
 
@@ -36,7 +36,7 @@ body {
 header{
     height: auto;
     width: auto;
-    background-color:#f0e1c5;
+    background-color:#f5f5f5;
     font-size: 30px;
     color:#000000;
     text-align: center;

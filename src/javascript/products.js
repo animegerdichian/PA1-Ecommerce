@@ -21,11 +21,11 @@ window.onload = function (){
                     "<td><p> $"+ collect["mug_"+i].price +  "</p> </td>" +
                 "</tr>" +
                 "<tr>" +
-                    "<td>"+ "<div class = 'rate'> <p>"+"<img src='star1.jpg' align='left' height='20px'>"
-                    +"<img src='star1.jpg' align='left' height='20px'>"
-                    +"<img src='star1.jpg' align='left' height='20px'>"
-                    +"<img src='star1.jpg' align='left' height='20px'>"
-                    +"<img src='star.png' align='left' height='20px'>"
+                    "<td>"+ "<div class = 'rate'> <p>"+"<img src='"+collect["mug_"+i].star1+"' align='left' height='20px'>"
+                    +"<img src='"+collect["mug_"+i].star2+"' align='left' height='20px'>"
+                    +"<img src='"+collect["mug_"+i].star3+"' align='left' height='20px'>"
+                    +"<img src='"+collect["mug_"+i].star4+"' align='left' height='20px'>"
+                    +"<img src='"+collect["mug_"+i].star5+"' align='left' height='20px'>"
                     +"</p></div>" + "<h4>" +collect["mug_"+i].review_num + " reviews</h4>"  + " </td>" +
                     
                 "</tr>" +
