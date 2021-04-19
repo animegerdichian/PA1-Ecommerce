@@ -3,14 +3,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title> Chocolate Shopping Page - ITEM </title>
-    <link rel="stylesheet" href="../css/Item.css">
+    
+    <title> MORNING RITUALS </title>
+    <link rel="stylesheet" href="css/item.css">
     <script type="module" src="javascript/item.js"></script>
 
 </head>
 
 <body>
+    
     <div class="container">
         <div class="navbar">
           <nav>
@@ -24,37 +25,28 @@
       </div>
     <div id="container">
     <section>
+        <header><h1>MORNING RITUALS</h1></header>
 
         <main>
-            <!-- TOP LEFT Section to represent the selected item from the HOME PAGE  -->
+            
             <div class="container1">
                 <div class="itemImage">
-                    <img id="main-picture" src="" alt="main picture">
+                    <img id="first-pic" src="" alt="main picture">
                     <div class="itemName">
-                        <h10 id="small-name"> Name Of the Product </h10>
+                        <h10 id="small-name"> Product </h10>
                     </div>
                 </div>
             </div>
-            <!-- TOP LEFTSection to represent the selected item from the HOME PAGE ends here  -->
-
-
-
-
-
-
-
-
-
-
-            <!-- TOP RIGHT Section to represent the auxiliary image1 and image2 && detailed Description  -->
+           
+           
             <div class="container2">
 
                 <div class="extraImage1">
-                    <img id="add-picture-1" src="" alt="add-on picture one">
+                    <img id="other-pic-1" src="" >
                 </div>
 
                 <div class="extraImage2">
-                    <img id="add-picture-2" src="" alt="add-on picture two">
+                    <img id="other-pic-2" src="" >
                 </div>
 
                 <div class="Descriptions">
@@ -62,80 +54,54 @@
                         </h2>
                         <h2 class="item-info" id="price">
                             </h1>
-                            <h5 class="item-info" id="origin"><b>Origin: </b></h3>
-                                <h5 class="item-info" id="direction"><b>Direction: </b></h3>
+                            <h5 class="item-info" id="artist">Artist: </h3>
+                                <h5 class="item-info" id="description">Description:</h3>
                 </div>
             </div>
-
-            <!-- TOP RIGHT Section to represent the auxiliary image1 and image2 && detailed Description ends here -->
-
-
-
-
-
-
-
-
 
             <div class="container3">
-                <div class="template">
-                </div>
-            </div>
+                <form class="form" name="myForm" action="index.html" id="user-form">
 
-            <div class="container4">
-                <form class="form" name="myForm" action="../html/shop.html" id="user-form">
-
-                    <h31 class = "template-item"> Quantity : </h31><br>
-                    <input type="text" id="quantity" placeholder="*ex) 500" /><br>
-                    <h32 class = "template-item"> First Mame : </h32><br>
-                    <input type="text" id="firstName" placeholder="*ex) Chuck" /><br>
-                    <h32 class = "template-item"> Last Mame : </h32><br>
-                    <input type="text" id="lastName" placeholder="*ex) Noris" /><br>
-                    <h33 class = "template-item"> Phone Number : </h33><br>
-                    <input type="text" id="phoneNumber" placeholder="*ex) (Area Code)-xxx-xxxx" /><br>
-                    <h34 class = "template-item"> Street Number : </h34><br>
-                    <input type="text" id="streetNumber" placeholder="*ex) 14800" /><br>
-                    <h35 class = "template-item"> Street Name : </h35><br>
-                    <input type="text" id="streetName" placeholder="*ex) Culver" /><br>
-                    <h37 class = "template-item"> Apartment / Unit Number (optional) : </h37><br>
-                    <input type="text" id="unitNumber" placeholder="ex) 45A" /><br>
-                    <h38 class = "template-item"> City : </h38><br>
-                    <input type="text" id="city" placeholder="*ex) Irvine" /><br>
-                    <h39 class = "template-item"> State : </h39><br>
-                    <input type="text" id="state" placeholder="*ex) CA" /><br>
-                    <h40 class = "template-item"> Credit Card Number : </h40><br>
-                    <input type="text" id="creditCard" placeholder="*ex) xxxx-xxxx-xxxx-xxxx" /><br>
-                    <h41 class = "template-item"> Your Email Address : </h41><br>
-                    <input type="text" id="email" placeholder="*ex) HelloWorld@ucie.edu" /><br><br/>
+                    <p class = "template-item"> Amount </p>
+                    <input type="text" id="amount" placeholder="2" /><br>
+                    <p class = "template-item"> First Name </p>
+                    <input type="text" id="first_name" placeholder="Jane" /><br>
+                    <p class = "template-item"> Last Name </p>
+                    <input type="text" id="last_name" placeholder="Doe" /><br>
+                    <p class = "template-item"> Phone Number </p>
+                    <input type="text" id="phone_number" placeholder="(XXX)XXX-XXXX" /><br>
+                    <p class = "template-item"> Email Address </p>
+                    <input type="text" id="email" placeholder="zot@uci.edu" /><br><br/>
+                    <p class = "template-item"> Street Address </p>
+                    <input type="text" id="street_address" placeholder="5000 Johnson Street" /><br>
+                    <p class = "template-item"> City </p>
+                    <input type="text" id="city" placeholder="San Francisco" /><br>
+                    <p class = "template-item"> State </p>
+                    <input type="text" id="state" placeholder="CA" /><br>
+                    <p class = "template-item"> Credit Card Number</p>
+                    <input type="text" id="credit_card" placeholder="xxxx-xxxx-xxxx-xxxx" /><br>
                     <div class="box">
                         <select id="selection">
-                            <option value="default"> *Click to select your shipping option </option>
-                            <option value="2day"> 2-days shipping </option>
-                            <option value="7days"> 5 to 7 days shipping </option>
+                            <option value="default"> Shipping </option>
+                            <option value="3day"> 3 business days shipping </option>
+                            <option value="7day"> 7 business days shipping </option>
                         </select>
                     </div><br/>
 
                     <button>
-                        <imput type="submit" class="P-button" value="submit"> PURCHASE </imput>
+                        <imput type="submit" class="P-button" value="submit"> Submit </imput>
                     </button>
                 </form>
 
                 </form>
             </div>
-
-
-
-
-
-
-
-
-
+            <div class="container4">
+                <div class="template">
+                </div>
+            </div>
         </main>
 
     </section>
-
-
 
 </body>
 
