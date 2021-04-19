@@ -145,6 +145,11 @@ function validate() {
         return true;
     }
 
+    if( Shipping == "5day") {
+
+        return true;
+    }
+
     if( Shipping == "7day") {
 
         return true;
