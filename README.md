@@ -22,12 +22,12 @@ The page for each item includes a form on the bottom left of the page where the 
 ##### 7. Upon submitting the form, the website should send an email with the purchase order information included in the body of the email. Note that to send an email, one needs to connect to the SMTP server, which is not possible with the client-side software. Thus, this requirement simply requires bringing up the email client with the purchase order information included in the body of the email and allowing the user to send the email. 
 Once the user clicks 'Submit' on the form, if all of the input is valid, the email client will be brought up. The subject of the email will be "Get Ready for a Delivery!" and an example of the email body is:
 
-Confirmation of purchase Rainbow Mug hand-made by Susan Kappala.
-Order Amount: 1
-Price Per Unit: 35.99
-Your Name: Kendall Ruggers
-Your Address: 432 Johnston Street Albany NY
-We will email you once your item has shipped!
+Confirmation of purchase Rainbow Mug hand-made by Susan Kappala.<br />
+Order Amount: 1<br />
+Price Per Unit: 35.99<br />
+Your Name: Kendall Ruggers<br />
+Your Address: 432 Johnston Street Albany NY<br />
+We will email you once your item has shipped!<br />
 
 Thank you!
 MORNING RITUALS
