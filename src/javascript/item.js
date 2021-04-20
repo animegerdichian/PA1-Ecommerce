@@ -53,7 +53,8 @@ function validate() {
     var card_length = credit_card.value.length;
 
 
-    var shipping = document.getElementById("selection").value;
+    var shipping = document.getElementById("selection");
+    console.log(shipping.value);
 
 
   /* check that all fields are filled out */
@@ -139,53 +140,51 @@ function validate() {
         return false;
     }
 
-    /* check shipping selection*/
-    if( Shipping == "3day") {
-
-        return true;
-    }
-
-    if( Shipping == "5day") {
-
-        return true;
-    }
-
-    if( Shipping == "7day") {
-
-        return true;
-    } 
-    
-
+   
     return true;
 };
 
 function purchase_item(e){
+    console.log("purchase");
+    console.log(validate());
     if (validate()){
+        
         send_email(document.getElementById("email").value);
     }else{
+      
         e.preventDefault();
     }
 }
 
 function send_email(mail){
-    var email_url = "mailto:";
-    email_url += mail + "?subject=" + encodeURIComponent("Get Ready for a Delivery!") +
-        "&body=" + encodeURIComponent("Confirmation of purchase "+mug_collect["mug_"+num].name+" at MORNING RITUALS");
     
-    window.open(email_url,'popUpWindow','height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no');
+   
+    
+    window.location.href = "mailto:"+ mail + "?subject=Get%20Ready%20For%20a%20Delivery!&body=Confirmation%20of%20purchase%20" 
+                + COLLECT["mug_"+num].name
+                +"%20hand-made%20by%20"+ COLLECT["mug_"+num].artist 
+                + ".%0D%0A" + "Order%20Amount:%20" + amount.value 
+                + "%0D%0A" + "Price%20Per%20Unit:%20" + COLLECT["mug_"+num].price
+                +"%0D%0A"   + "Your%20Name:%20" + first_name.value + "%20" + last_name.value 
+                +"%0D%0A"   + "Your%20Address:%20" + street_address.value + "%20" + city.value + "%20" + state.value +"%0D%0A"
+                + "We%20will%20email%20you%20once%20your%20item%20has%20shipped!" + "%0D%0A" + "%0D%0A"+ "Thank%20you!" + "%0D%0A" + "%20%20%20MORNING%20RITUALS";
+    window.setTimeout(function () { location.href="products.html" }, 0); 
+    
 }
 
 window.onload = function (){
+    console.log("winow onload");
     document.getElementById("first-pic").src = COLLECT["mug_"+num].img;
     document.getElementById("other-pic-1").src = COLLECT["mug_"+num].pic_1;
     document.getElementById("other-pic-2").src = COLLECT["mug_"+num].pic_2;
     document.getElementById("name").innerHTML = COLLECT["mug_"+num].name;
-    document.getElementById("item-name").innerHTML = COLLECT["mug_"+num].name;
+    document.getElementById("small-name").innerHTML = COLLECT["mug_"+num].name;
     document.getElementById("price").innerHTML = '$ ' + COLLECT["mug_"+num].price;
     document.getElementById("artist").innerHTML += COLLECT["mug_"+num].artist;
     document.getElementById("description").innerHTML += COLLECT["mug_"+num].description;
 }
 
 document.getElementById('user-form').onsubmit = function(e){
+    console.log("on submit");
     purchase_item(e);
 }

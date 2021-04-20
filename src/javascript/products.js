@@ -9,7 +9,7 @@ window.onload = function (){
         "<table>" +
             "<tbody >" + 
                 "<tr>" +
-                    "<td><img width='250'height='250'class = \" enlarge-pic \" onclick=\" openItemPage("+ i + ") \" src=\" " + collect["mug_"+i].img + " \" /></td> " +
+                    "<td><img width='250'height='250'class = \" enlarge-pic \" onclick=\" getItem("+ i + ") \" src=\" " + collect["mug_"+i].img + " \" /></td> " +
                 "</tr>" +
                 "<tr>" +
                     "<td><p> "+ collect["mug_"+i].name +  "</p> </td> " +
