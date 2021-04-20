@@ -20,7 +20,17 @@ The user is able to click on the image of a product on the Products page which w
 ##### 6. On the detailed description page, the user should be able to order a product by filling a form. The form should allow the user to enter the product identifier, quantity, first name, last name, phone number, shipping address, shipping method (e.g., overnight, 2-days expedited, 6-days ground), credit card information, and anything else that you think makes sense for your business.
 The page for each item includes a form on the bottom left of the page where the user can input relevant information for ordering a product. This includes name,phone number, email, address, credit card number, and shipping method.
 ##### 7. Upon submitting the form, the website should send an email with the purchase order information included in the body of the email. Note that to send an email, one needs to connect to the SMTP server, which is not possible with the client-side software. Thus, this requirement simply requires bringing up the email client with the purchase order information included in the body of the email and allowing the user to send the email. 
-Once the user clicks 'Submit' on the form, if all of the input is valid, the email client will be brought up. The subject of the email will be "Get Ready for a Delivery!" and the body will have "Confirmation of purchase 'mug name' at MORNING RITUALS".
+Once the user clicks 'Submit' on the form, if all of the input is valid, the email client will be brought up. The subject of the email will be "Get Ready for a Delivery!" and an example of the email body is:
+
+Confirmation of purchase Rainbow Mug hand-made by Susan Kappala.
+Order Amount: 1
+Price Per Unit: 35.99
+Your Name: Kendall Ruggers
+Your Address: 432 Johnston Street Albany NY
+We will email you once your item has shipped!
+
+Thank you!
+MORNING RITUALS
 ##### 8. Before submitting the form, it should be checked for proper formatting, including whether all fields are filled properly, whether the phone number, address, and credit card are properly formatted, etc. An alarm should be raised if a field is empty or not properly formatted to prevent submission of bad data. 
 Validation of input formatting is done using regular expression. There are also checks in place to make sure all fields are filled out. Numeric data is also checked to make sure it is within the acceptable range. If there is a validation error, a descriptive message is relayed to the user. See item.js to view how validation is done.
 ##### 9. Your website should use CSS for layout and styling. You should create style rules so that the general design of the website, mainly the products page, is as close as possible to this image:
