@@ -27,7 +27,7 @@ This is a confirmation of your purchase of Rainbow Mug hand-made by Susan Kappal
 Order Amount: 1<br />
 Price Per Unit: 35.99<br />
 Your Address: 432 Johnston Street Albany NY<br />
-We will email you once your item has shipped!<br />
+We will email you once your item(s) has shipped!<br />
 
 Thank you!<br />
 MORNING RITUALS<br />
