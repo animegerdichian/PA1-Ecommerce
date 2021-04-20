@@ -3,6 +3,14 @@ body{
     background-color:#f5f5f5;
 }
 
+h4{
+    text-align: left;
+}
+
+h3{
+    text-align: left;
+}
+
 .head-text{
     text-align: center;
     align-content: center;

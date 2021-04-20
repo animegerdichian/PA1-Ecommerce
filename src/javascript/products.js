@@ -12,13 +12,13 @@ window.onload = function (){
                     "<td><img width='250'height='250'class = \" enlarge-pic \" onclick=\" getItem("+ i + ") \" src=\" " + collect["mug_"+i].img + " \" /></td> " +
                 "</tr>" +
                 "<tr>" +
-                    "<td><p> "+ collect["mug_"+i].name +  "</p> </td> " +
+                    "<td><h3> "+ collect["mug_"+i].name +  "</h3> </td> " +
                 "</tr>" +
                 "<tr>" +
                     "<td><p> "+ collect["mug_"+i].artist +  "</p> </td> " +
                 "</tr>" +
                 "<tr>" +
-                    "<td><p> $"+ collect["mug_"+i].price +  "</p> </td>" +
+                    "<td><h4> $"+ collect["mug_"+i].price +  "</h4> </td>" +
                 "</tr>" +
                 "<tr>" +
                     "<td>"+ "<div class = 'rate'> <p>"+"<img src='"+collect["mug_"+i].star1+"' align='left' height='20px'>"
@@ -26,7 +26,7 @@ window.onload = function (){
                     +"<img src='"+collect["mug_"+i].star3+"' align='left' height='20px'>"
                     +"<img src='"+collect["mug_"+i].star4+"' align='left' height='20px'>"
                     +"<img src='"+collect["mug_"+i].star5+"' align='left' height='20px'>"
-                    +"</p></div>" + "<h4>" +collect["mug_"+i].review_num + " reviews</h4>"  + " </td>" +
+                    +"</p></div>" + "<h5>" +collect["mug_"+i].review_num + " reviews</h5>"  + " </td>" +
                     
                 "</tr>" +
                 
