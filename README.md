@@ -1,7 +1,7 @@
 # PA1-Ecommerce - Created by Ani Megerdichian
 MORNING RITUALS: An e-retailer selling specially curated, artisinal mugs.
 ### General Layout
-Home page, Products page, About page
+Home page, Products page, About page</br>
 Each page can be accessed from all the other ones using the navigation bar and links at the top of each page.
 Each item in the Products page has its own page that can be accessed by going to the Products page and selecting an item by clicking on its image.
 ### Styling
