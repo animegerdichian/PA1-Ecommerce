@@ -2,10 +2,11 @@ import * as mug_collect from "./mugs.js";
 
 const collect = mug_collect.MUG_COLLECTION;
 
+/* display each item, its image, and descriptors including the star rating */
 window.onload = function (){
     for (var i = 1; i<=10; ++i){
-        document.getElementById("item-list").innerHTML += 
-        "<div class = \"item-block\">"+
+        document.getElementById("itemList").innerHTML += 
+        "<div class = \"itemBlock\">"+
         "<table>" +
             "<tbody >" + 
                 "<tr>" +

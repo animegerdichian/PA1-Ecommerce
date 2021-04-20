@@ -36,6 +36,7 @@ function addressValidate(){
 
 
 function validate() {
+    /* assign variables from form */
     var amount = document.getElementById("amount");
     var first_name = document.getElementById("first_name");
     var last_name = document.getElementById("last_name");
@@ -143,22 +144,20 @@ function validate() {
    
     return true;
 };
-
-function purchase_item(e){
+/* once submit is clicked on form,validate and the send email */
+function buy_item(e){
     
     if (validate()){
         
-        send_email(document.getElementById("email").value);
+        deliverEmail(document.getElementById("email").value);
     }else{
       
         e.preventDefault();
     }
 }
 
-function send_email(mail){
-    
-   
-    
+/* function for opening mail client */
+function deliverEmail(mail){
     window.location.href = "mailto:"+ mail + "?subject=Get%20Ready%20For%20a%20Delivery!&body="  + "Hi%20" + first_name.value + "%20" + last_name.value +"!"+"%0D%0A"
     +"This%20is%20a%20confirmation%20of%20your%20purchase%20of%20" 
                 + COLLECT["mug_"+num].name
@@ -171,6 +170,7 @@ function send_email(mail){
     
 }
 
+/* load the item images and info on page */
 window.onload = function (){
     
     document.getElementById("first-pic").src = COLLECT["mug_"+num].img;
@@ -185,5 +185,5 @@ window.onload = function (){
 
 document.getElementById('user-form').onsubmit = function(e){
    
-    purchase_item(e);
+    buy_item(e);
 }
