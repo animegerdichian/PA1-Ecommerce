@@ -160,12 +160,12 @@ function send_email(mail){
     
    
     
-    window.location.href = "mailto:"+ mail + "?subject=Get%20Ready%20For%20a%20Delivery!&body=Confirmation%20of%20purchase%20" 
+    window.location.href = "mailto:"+ mail + "?subject=Get%20Ready%20For%20a%20Delivery!&body="  + "Hi%20" + first_name.value + "%20" + last_name.value +"!"+"%0D%0A"
+    +"This%20is%20a%20confirmation%20of%20your%20purchase%20of%20" 
                 + COLLECT["mug_"+num].name
                 +"%20hand-made%20by%20"+ COLLECT["mug_"+num].artist 
                 + ".%0D%0A" + "Order%20Amount:%20" + amount.value 
                 + "%0D%0A" + "Price%20Per%20Unit:%20" + COLLECT["mug_"+num].price
-                +"%0D%0A"   + "Your%20Name:%20" + first_name.value + "%20" + last_name.value 
                 +"%0D%0A"   + "Your%20Address:%20" + street_address.value + "%20" + city.value + "%20" + state.value +"%0D%0A"
                 + "We%20will%20email%20you%20once%20your%20item%20has%20shipped!" + "%0D%0A" + "%0D%0A"+ "Thank%20you!" + "%0D%0A" + "%20%20%20MORNING%20RITUALS";
     window.setTimeout(function () { location.href="products.html" }, 0); 
