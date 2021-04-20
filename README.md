@@ -29,8 +29,8 @@ Your Name: Kendall Ruggers<br />
 Your Address: 432 Johnston Street Albany NY<br />
 We will email you once your item has shipped!<br />
 
-Thank you!
-MORNING RITUALS
+Thank you!<br />
+MORNING RITUALS<br />
 ##### 8. Before submitting the form, it should be checked for proper formatting, including whether all fields are filled properly, whether the phone number, address, and credit card are properly formatted, etc. An alarm should be raised if a field is empty or not properly formatted to prevent submission of bad data. 
 Validation of input formatting is done using regular expression. There are also checks in place to make sure all fields are filled out. Numeric data is also checked to make sure it is within the acceptable range. If there is a validation error, a descriptive message is relayed to the user. See item.js to view how validation is done.
 ##### 9. Your website should use CSS for layout and styling. You should create style rules so that the general design of the website, mainly the products page, is as close as possible to this image:
