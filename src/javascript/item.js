@@ -145,8 +145,7 @@ function validate() {
 };
 
 function purchase_item(e){
-    console.log("purchase");
-    console.log(validate());
+    
     if (validate()){
         
         send_email(document.getElementById("email").value);
@@ -173,7 +172,7 @@ function send_email(mail){
 }
 
 window.onload = function (){
-    console.log("winow onload");
+    
     document.getElementById("first-pic").src = COLLECT["mug_"+num].img;
     document.getElementById("other-pic-1").src = COLLECT["mug_"+num].pic_1;
     document.getElementById("other-pic-2").src = COLLECT["mug_"+num].pic_2;
@@ -185,6 +184,6 @@ window.onload = function (){
 }
 
 document.getElementById('user-form').onsubmit = function(e){
-    console.log("on submit");
+   
     purchase_item(e);
 }
